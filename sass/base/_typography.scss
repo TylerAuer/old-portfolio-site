@@ -2,6 +2,33 @@ body {
   font-size: 1.6rem;
 }
 
-h1 {
+.title-large {
   font-size: 6rem;
+  text-transform: uppercase;
+  //text-shadow: 5px 5px 15px #c1b2b2, -5px -5px 15px #fffafa;
+  letter-spacing: 2px;
+  margin: 2rem 0;
+  font-family: $font-mont;
+}
+
+.title-small {
+  font-size: 4rem;
+  font-family: $font-mont;
+  margin: 1rem 0;
+  color: $grey-blue;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+
+  &::before {
+    content: '/';
+    color: $red;
+    font-family: $font-mont;
+    font-weight: 400;
+  }
+
+  &--dark {
+  }
+
+  &--light {
+  }
 }

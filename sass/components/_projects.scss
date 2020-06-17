@@ -1,0 +1,93 @@
+.section-projects {
+  margin: -2rem 3rem 0 3rem;
+
+  & > .title-large {
+    text-align: center;
+  }
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 2rem 6rem 0;
+
+  &__left-side {
+  }
+
+  &__right-side {
+  }
+
+  &__link-list {
+    margin: 1rem 0;
+    position: relative;
+  }
+
+  &__link,
+  &__link:visited {
+    color: $red;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: inline-block;
+    transition: all 0.2s;
+    text-transform: lowercase;
+
+    &:not(:last-of-type)::after {
+      content: ' / ';
+      color: $grey-blue;
+    }
+  }
+
+  &__link:hover {
+    color: $red-dark;
+  }
+
+  &__description {
+    margin: 1rem 0;
+    line-height: 1.6;
+
+    a,
+    a:visited {
+      color: $red;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__tag-list {
+    margin: 1.5rem 0;
+  }
+
+  &__tag {
+    font-family: $font-mont;
+    font-size: 1.4rem;
+    color: $grey-light;
+    display: inline-block;
+    background: $grey-dark-2;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.1s;
+
+    &:not(:last-child) {
+      margin-right: 0.25rem;
+    }
+
+    &:hover {
+      color: $grey-light;
+      background-color: $red;
+      cursor: pointer;
+      transform: translateY(-3px);
+    }
+
+    &:active {
+      color: $grey-light;
+      background-color: $red;
+      cursor: pointer;
+      transform: translateY(-1px);
+    }
+  }
+}
