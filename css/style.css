@@ -175,9 +175,6 @@ body {
     text-align: center; }
 
 .project {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 0rem 2rem 6rem 0; }
   .project__link-list {
     margin: 1rem 0;
