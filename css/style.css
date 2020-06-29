@@ -70,7 +70,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #2d2d2d;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90vh, 55vw 92vh, 50vw 96vh, 45vw 92vh, 0% 90vh); }
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90vh, 50vw 95vh, 0% 90vh); }
 
 .title {
   font-size: 6rem;
@@ -80,15 +80,17 @@ body {
     color: #e8d6d6;
     font-weight: 300; }
   .title__descriptors-box {
-    margin-left: 2rem;
-    font-weight: 700;
     overflow: hidden;
+    position: relative;
     height: 8rem;
-    position: relative; }
+    margin-left: 2rem;
+    font-weight: 700; }
   .title__descriptor {
     color: #e74c3c;
+    display: inline-block;
     position: relative;
     top: 0;
+    left: 0;
     animation: scroll 8s infinite 0s ease; }
 
 .social {
