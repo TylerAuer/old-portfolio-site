@@ -1,4 +1,35 @@
 .section-about {
-  height: 100rem;
-  margin: 6rem 0;
+  background-color: $red;
+  transform: skewY(6deg);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90vh, 50% 95vh, 0% 90vh);
+  padding: 20rem 10rem;
+  margin: 22rem 0;
+}
+
+.about {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    text-transform: uppercase;
+    color: $grey-light;
+    font-size: 10rem;
+    transform: skewY(-6deg) rotate(-90deg);
+  }
+
+  &__description {
+    transform: skewY(-6deg);
+    font-size: 2rem;
+    color: $grey-light;
+    margin-right: 10vw;
+    margin-left: -4rem;
+    max-width: 70rem;
+
+    > p {
+      margin-bottom: 2.2rem;
+      line-height: 1.6;
+    }
+  }
 }

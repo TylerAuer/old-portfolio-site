@@ -81,8 +81,32 @@ body {
     font-weight: 400; }
 
 .section-about {
-  height: 100rem;
-  margin: 6rem 0; }
+  background-color: #e74c3c;
+  transform: skewY(6deg);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90vh, 50% 95vh, 0% 90vh);
+  padding: 20rem 10rem;
+  margin: 22rem 0; }
+
+.about {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center; }
+  .about__title {
+    text-transform: uppercase;
+    color: #e8d6d6;
+    font-size: 10rem;
+    transform: skewY(-6deg) rotate(-90deg); }
+  .about__description {
+    transform: skewY(-6deg);
+    font-size: 2rem;
+    color: #e8d6d6;
+    margin-right: 10vw;
+    margin-left: -4rem;
+    max-width: 70rem; }
+    .about__description > p {
+      margin-bottom: 2.2rem;
+      line-height: 1.6; }
 
 .hero__shadow {
   filter: drop-shadow(0 1px 2px black); }
@@ -99,7 +123,7 @@ body {
   padding-bottom: 15%; }
 
 .title {
-  flex-grow: 2;
+  flex-grow: 3;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.3rem;
   color: #e8d6d6;
