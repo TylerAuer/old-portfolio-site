@@ -25,21 +25,12 @@
       <div class="hero__shadow">
         <div class="hero__clipped">
           <div class="title">
-            <p class="title__name">Tyler Auer</p>
-            <div class="title__descriptors-box">
-              <div class="title__descriptor">
-                full-stack developer<br />
-                former teacher<br />
-                backpacker<br />
-                father<br />
-                boardgamer<br />
-                full-stack developer
-              </div>
-            </div>
+            <h1 class="title__name">Tyler Auer</h1>
+            <div class="title__role">Full-stack Developer</div>
           </div>
           <div class="social">
             <a href="https://twitter.com/TylerAuer">
-              <div class="social__icon-box">
+              <div class="social__icon-box social__icon-box--3">
                 <svg class="social__icon">
                   <use xlink:href="/img/social-sprites.svg#twitter">
                 </svg>
@@ -47,7 +38,7 @@
               </div>
             </a>
             <a href="https://www.linkedin.com/in/tyler-auer-903b481a1/">
-              <div class="social__icon-box">
+              <div class="social__icon-box social__icon-box--2">
                 <svg class="social__icon">
                   <use xlink:href="/img/social-sprites.svg#linkedin">
                 </svg>
@@ -55,7 +46,7 @@
               </div>
             </a>
             <a href="https://blog.tylerauer.com/">
-              <div class="social__icon-box">
+              <div class="social__icon-box social__icon-box--1">
                 <svg class="social__icon">
                   <use xlink:href="/img/social-sprites.svg#typewriter">
                 </svg>
@@ -63,7 +54,7 @@
               </div>
             </a>
             <a href="https://github.com/TylerAuer">
-              <div class="social__icon-box">
+              <div class="social__icon-box social__icon-box--2">
                 <svg class="social__icon">
                   <use xlink:href="/img/social-sprites.svg#github">
                 </svg>
@@ -71,7 +62,7 @@
               </div>
             </a>
             <a href="mailto:tyler.auer&#64;gmail.com">
-              <div class="social__icon-box">
+              <div class="social__icon-box social__icon-box--3">
                 <svg class="social__icon">
                   <use xlink:href="/img/social-sprites.svg#email">
                 </svg>
@@ -79,36 +70,39 @@
               </div>
             </a>
           </div>
+          <div class="down-arrow">
+            <a href="/#projects" class="down-arrow__text">&darr;</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section-projects">
+    <section id="projects" class="section-projects">
       <h2 class="title-large">Projects</h2>
       <!-- Reddit Clone -->
       <div class="project">
-        <div class="project__left-side">
-          <h3 class="title-small">Reddit_Clone</h3>
-          <div class="project__link-list">
-            <a href="#" class="project__link">Live</a>
-            <a href="https://github.com/TylerAuer/reddit-clone-2" class="project__link">GitHub</a>
-          </div>
-          <p class="project__description">A full-stack clone of Reddit with user authentication, posts, nested comments,
-            feeds, and account management. Hosted on AWS and built using Postgres, Express, React, and Node</p>
-          <div class="project__tag-list">
-            <a href="https://expressjs.com/" class="project__tag">Express</a>
-            <a href="https://nodejs.org/en/" class="project__tag">Node</a>
-            <a href="https://www.postgresql.org/" class="project__tag">PostgreSQL</a>
-            <a href="https://sequelize.org/v5/" class="project__tag">Sequelize</a>
-            <a href="https://reactjs.org/" class="project__tag">React</a>
-            <a href="https://emotion.sh/docs/introduction" class="project__tag">Emotion</a>
-            <a href="https://www.react-spring.io/" class="project__tag">React-Spring</a>
-          </div>
-          </>
+        <div class="project__left-side"></div>
+        <h3 class="title-small">Reddit_Clone</h3>
+        <div class="project__link-list">
+          <a href="#" class="project__link">Live</a>
+          <a href="https://github.com/TylerAuer/reddit-clone-2" class="project__link">GitHub</a>
         </div>
-        <div class="project__right-side">
-          Right side
+        <p class="project__description">A full-stack clone of Reddit with user authentication, posts, nested comments,
+          feeds, and account management. Hosted on AWS and built using Postgres, Express, React, and Node</p>
+        <div class="project__tag-list">
+          <a href="https://expressjs.com/" class="project__tag">Express</a>
+          <a href="https://nodejs.org/en/" class="project__tag">Node</a>
+          <a href="https://www.postgresql.org/" class="project__tag">PostgreSQL</a>
+          <a href="https://sequelize.org/v5/" class="project__tag">Sequelize</a>
+          <a href="https://reactjs.org/" class="project__tag">React</a>
+          <a href="https://emotion.sh/docs/introduction" class="project__tag">Emotion</a>
+          <a href="https://www.react-spring.io/" class="project__tag">React-Spring</a>
         </div>
+      </div>
+      </div>
+      <div class="project__right-side">
+        Right side
+      </div>
       </div>
 
       <!-- Fruit Grapher -->
@@ -197,7 +191,7 @@
     </section>
   </main>
 
-  <script src="/js/scripts.js" async defer></script>
+  <script src="/js/scripts.js" async defer> </script>
 </body>
 
 </html>
