@@ -1,9 +1,13 @@
 .section-about {
   background-color: $red;
   transform: skewY(6deg);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90vh, 50% 95vh, 0% 90vh);
   padding: 20rem 10rem;
   margin: 22rem 0;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 15rem 0;
+    margin: 20rem 0;
+  }
 }
 
 .about {
@@ -12,11 +16,21 @@
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: $bp-large) {
+    display: block;
+  }
+
   &__title {
     text-transform: uppercase;
     color: $grey-light;
     font-size: 10rem;
     transform: skewY(-6deg) rotate(-90deg);
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 6rem;
+      transform: skewY(-6deg);
+      text-align: center;
+    }
   }
 
   &__description {
@@ -27,9 +41,35 @@
     margin-left: -4rem;
     max-width: 70rem;
 
+    @media only screen and (max-width: $bp-large) {
+      max-width: none;
+      margin: 5rem 12rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: none;
+      margin: 5rem 8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 5rem 4rem;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      margin: 2rem 2rem;
+    }
+
     > p {
       margin-bottom: 2.2rem;
       line-height: 1.6;
+
+      @media only screen and (max-width: $bp-large) {
+        text-align: center;
+      }
+
+      @media only screen and (max-width: $bp-xsmall) {
+        text-align: justify;
+      }
     }
   }
 }

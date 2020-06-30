@@ -36,6 +36,25 @@
     font-size: 18rem;
     font-weight: 100;
     animation: slideRight 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 15rem;
+    }
+    @media only screen and (max-width: $bp-large) {
+      font-size: 12rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 9rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 7.5rem;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 5rem;
+    }
   }
 
   &__role {
@@ -44,6 +63,26 @@
     color: $red;
     animation: slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s;
     animation-fill-mode: both;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 2.75rem;
+      font-weight: 400;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-top: 1rem;
+      font-size: 2.4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      padding-top: 2rem;
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -61,14 +100,29 @@
     margin: 0 2rem;
     width: 8.2rem;
 
+    @media only screen and (max-width: $bp-large) {
+      margin: 0 1rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 6.5rem;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      width: 4.5rem;
+    }
+
     &--1 {
-      animation: fadeInAndGrow 0.4s backwards ease 1s;
+      animation: fadeInAndGrow 0.4s backwards ease 0.6s;
     }
     &--2 {
-      animation: fadeInAndGrow 0.4s backwards ease 1.2s;
+      animation: fadeInAndGrow 0.4s backwards ease 0.8s;
     }
     &--3 {
-      animation: fadeInAndGrow 0.4s backwards ease 1.4s;
+      animation: fadeInAndGrow 0.4s backwards ease 1s;
     }
   }
 
@@ -78,6 +132,25 @@
     height: 4rem;
     transition: all 0.2s;
     backface-visibility: none;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 
   &__icon-label {
@@ -87,6 +160,14 @@
     opacity: 0;
     color: $grey-light;
     transition: all 0.2s ease-out;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.2rem;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 1rem;
+    }
   }
 
   &__icon-box:hover > &__icon {

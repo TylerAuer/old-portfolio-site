@@ -1,8 +1,22 @@
 .section-projects {
-  margin: -2rem 3rem 0 3rem;
+  max-width: 120rem;
+  margin: -2rem auto 0 auto;
+  padding: 0 3rem;
 
   & > .title-large {
     text-align: center;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-xsmall) {
+    padding: 0 1rem;
   }
 }
 
@@ -59,6 +73,7 @@
     display: inline-block;
     background: $grey-dark-2;
     padding: 0.6rem 1rem;
+    margin-bottom: 0.5rem;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.1s;

@@ -7,8 +7,16 @@ body {
   text-transform: uppercase;
   //text-shadow: 5px 5px 15px #c1b2b2, -5px -5px 15px #fffafa;
   letter-spacing: 2px;
-  margin: 2rem 0;
+  margin: 3rem 0;
   font-family: $font-mont;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4rem;
+  }
 }
 
 .title-small {
@@ -18,6 +26,22 @@ body {
   color: $grey-blue;
   letter-spacing: 2px;
   text-transform: lowercase;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 3.5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2.75rem;
+  }
+
+  @media only screen and (max-width: $bp-xsmall) {
+    font-size: 2.5rem;
+  }
 
   &::before {
     content: '/';

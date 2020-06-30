@@ -1,6 +1,10 @@
+/////////////////////////
+// FONTS
 $font-mont: 'Montserrat', sans-serif;
 $font-open: 'Open Sans', sans-serif;
 
+/////////////////////////
+// COLORS
 $grey-dark: #2d2d2d;
 $grey-dark-gold: #463e31;
 $grey-dark-2: #6a6767;
@@ -21,3 +25,13 @@ $purple-1: #f5d5f5;
 $purple-2: #ffdeee;
 
 $green-1: #bee8ca;
+
+/////////////////////////
+// BREAKPOINTS
+
+// To calculate: em = width in px / 16
+$bp-largest: 62.5em; // 1000px
+$bp-large: 53.125em; // 850px
+$bp-medium: 40.625em; // 650px
+$bp-small: 34.375em; // 550px
+$bp-xsmall: 25em; // 400px
