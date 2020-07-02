@@ -315,15 +315,19 @@ body {
     transform: translateY(4px); }
 
 .down-arrow {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 5rem; }
   .down-arrow__text, .down-arrow__text:visited {
     display: block;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    font-size: 2rem;
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.2);
     animation: bounceDownAndScale 0.5s ease-in-out alternate infinite 2s both; }
+    @media only screen and (max-width: 40.625em) {
+      .down-arrow__text, .down-arrow__text:visited {
+        font-size: 2rem; } }
 
 .section-projects {
   max-width: 120rem;
