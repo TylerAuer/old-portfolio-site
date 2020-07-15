@@ -224,23 +224,26 @@ body {
     font-weight: 600;
     color: #e74c3c;
     animation: slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.6s;
-    animation-fill-mode: both; }
+    animation-fill-mode: both;
+    padding-top: 1.5rem; }
+    @media only screen and (max-width: 62.5em) {
+      .title__role {
+        font-size: 2.4rem; } }
     @media only screen and (max-width: 53.125em) {
       .title__role {
-        font-size: 2.75rem;
+        font-size: 2rem;
         font-weight: 400; } }
     @media only screen and (max-width: 40.625em) {
       .title__role {
-        padding-top: 1rem;
-        font-size: 2.4rem; } }
+        font-size: 1.8rem; } }
     @media only screen and (max-width: 34.375em) {
       .title__role {
-        font-size: 2rem;
+        font-size: 1.2rem;
         text-transform: uppercase; } }
     @media only screen and (max-width: 25em) {
       .title__role {
-        padding-top: 2rem;
-        font-size: 1.5rem; } }
+        font-size: 1.2rem;
+        padding: 2rem 5rem 0 5rem; } }
 
 .social {
   flex-grow: 1;
