@@ -7,7 +7,7 @@ body {
   text-transform: uppercase;
   //text-shadow: 5px 5px 15px #c1b2b2, -5px -5px 15px #fffafa;
   letter-spacing: 2px;
-  margin: 3rem 0;
+  margin: 4rem 0;
   font-family: $font-mont;
 
   @media only screen and (max-width: $bp-medium) {
@@ -48,11 +48,5 @@ body {
     color: $red;
     font-family: $font-mont;
     font-weight: 400;
-  }
-
-  &--dark {
-  }
-
-  &--light {
   }
 }

@@ -80,7 +80,7 @@ body {
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 3rem 0;
+  margin: 4rem 0;
   font-family: "Montserrat", sans-serif; }
   @media only screen and (max-width: 40.625em) {
     .title-large {
@@ -350,6 +350,14 @@ body {
 
 .project {
   margin: 0rem 2rem 6rem 0; }
+  .project__title a,
+  .project__title a:visited {
+    text-decoration: none;
+    color: #565468; }
+    .project__title a:hover,
+    .project__title a:visited:hover {
+      text-decoration: underline;
+      text-decoration-color: #e74c3c; }
   .project__link-list {
     margin: 1rem 0;
     position: relative; }

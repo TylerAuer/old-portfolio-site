@@ -23,6 +23,17 @@
 .project {
   margin: 0rem 2rem 6rem 0;
 
+  &__title a,
+  &__title a:visited {
+    text-decoration: none;
+    color: $grey-blue;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $red;
+    }
+  }
+
   &__link-list {
     margin: 1rem 0;
     position: relative;

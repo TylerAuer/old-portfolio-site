@@ -89,12 +89,12 @@
     <section id="projects" class="section-projects">
       <h2 class="title-large">Projects</h2>
 
-      <!-- Fruit Grapher -->
+      <!-- Fruit Matrix -->
       <!-- <div id="fruit" class="project">
-        <h3 class="title-small">Fruit_Grapher</h3>
+        <h3 class="title-small project__title"><a href="fruit.tylerauer.com">fruit_matrix</a></h3>
         <div class="project__link-list">
-          <a href="#" class="project__link">Live</a>
-          <a href="https://github.com/TylerAuer/reddit-clone-2" class="project__link">source</a>
+          <a href="fruit.tylerauer.com" class="project__link">Live</a>
+          <a href="https://github.com/TylerAuer/fruit" class="project__link">source</a>
         </div>
         <p class="project__description">A full-stack app inspired by <a href="https://xkcd.com/388/"
             class="project__p-link">XKCD</a> and the <a
@@ -106,14 +106,14 @@
           <a href="https://nodejs.org/en/" class="project__tag">Node</a>
           <a href="https://www.postgresql.org/" class="project__tag">MongoDB</a>
           <a href="https://reactjs.org/" class="project__tag">React</a>
-          <a href="https://emotion.sh/docs/introduction" class="project__tag">Emotion</a>
           <a href="https://www.react-spring.io/" class="project__tag">React-Spring</a>
         </div>
       </div> -->
 
       <!-- Reddit Clone -->
       <!-- <div id="reddit" class="project">
-        <h3 class="title-small">Reddit_Clone</h3>
+           <h3 class="title-small project__title"><a href="https://reddit.tylerauer.com">reddit_clone</a></h3>
+        
         <div class="project__link-list">
           <a href="#" class="project__link">Live</a>
           <a href="https://github.com/TylerAuer/reddit-clone-2" class="project__link">source</a>
@@ -131,15 +131,36 @@
         </div>
       </div> -->
 
+      <!-- Bookshelf -->
+      <div id="bookshelf" class="project">
+
+        <h3 class="title-small project__title"><a href="https://books.tylerauer.com/">purple_bookshelf</a></h3>
+
+        <div class="project__link-list">
+          <a href="https://books.tylerauer.com/" class="project__link">Live</a>
+          <a href="https://github.com/TylerAuer/bookshelf" class="project__link">source</a>
+        </div>
+        <p class="project__description">Reviews of some of my favorite books with a custom masonry UI. Built
+          with React using React Router, React Spring, custom hooks, a Python
+          script to scrape public data from GoodReads, and automatic deployment to GitHub
+          Pages</p>
+        <div class="project__tag-list">
+          <a href="https://reactjs.org/" class="project__tag">React</a>
+          <a href="https://reactrouter.com/" class="project__tag">React Router</a>
+          <a href="https://www.react-spring.io/" class="project__tag">React Spring</a>
+          <a href="https://www.python.org/download/releases/3.0/" class="project__tag">Python</a>
+        </div>
+      </div>
+
       <!-- Blog -->
       <div id="blog" class="project">
-        <h3 class="title-small">Blog</h3>
+        <h3 class="title-small project__title"><a href="https://blog.tylerauer.com">Blog</a></h3>
         <div class="project__link-list">
           <a href="https://blog.tylerauer.com" class="project__link">Live</a>
           <a href="https://github.com/TylerAuer/blog" class="project__link">source</a>
         </div>
-        <p class="project__description">Tutorials, how-tos, and reflections about web development. Custom built using a
-          static-site generator and with automated builds and deployment using GitHub Actions.</p>
+        <p class="project__description">Tutorials, how-tos, and reflections about web development. Uses custom theme for
+          Hugo, a static-site generator. Automated builds and deployment using GitHub Actions.</p>
         <div class="project__tag-list">
           <a href="https://github.com/features/actions" class="project__tag">GitHub Actions</a>
           <a href="https://gohugo.io/" class="project__tag">Hugo</a>
@@ -147,28 +168,9 @@
         </div>
       </div>
 
-
-      <!-- Bookshelf -->
-      <div id="bookshelf" class="project">
-        <h3 class="title-small">purple_bookshelf</h3>
-        <div class="project__link-list">
-          <a href="https://books.tylerauer.com/" class="project__link">Live</a>
-          <a href="https://github.com/TylerAuer/bookshelf" class="project__link">source</a>
-        </div>
-        <p class="project__description">Reviews of some of my favorite books with a masonry-style presentation. Built
-          with React using React Router, custom hooks, a Python
-          script to scrape public data from GoodReads, and automatic deployment to GitHub
-          Pages</p>
-        <div class="project__tag-list">
-          <a href="https://reactjs.org/" class="project__tag">React</a>
-          <a href="https://reactrouter.com/" class="project__tag">React Router</a>
-          <a href="https://www.python.org/download/releases/3.0/" class="project__tag">Python</a>
-        </div>
-      </div>
-
       <!-- Super Bowl Props -->
       <!-- <div id="super-bowl-props" class="project">
-        <h3 class="title-small">Super_Bowl_Props</h3>
+        <h3 class="title-small project__title"><a href="https://sblv.tylerauer.com">Super Bowl Props</a></h3>
         <div class="project__link-list">
           <a href="#" class="project__link">Live</a>
           <a href="https://github.com/TylerAuer/reddit-clone-2" class="project__link">source</a>
@@ -193,16 +195,15 @@
         <h2 class="about__title">About</h2>
         <div class="about__description">
           <p>
-            I'm a full-stack developer who loves to build intuitive, maintainable applications.
+            I'm a full-stack developer who loves to build intuitive, maintainable applications. Hire me!
           </p>
           <p>
             I spent the last twelve years leading teams of educators and teaching math, science, and technology to kids
             as young as five and up through high school.
           </p>
           <p>
-            I've been studying hard, working with HTML, CSS, JavaScript, React, Bootstrap, Jekyll, Hugo, Postgres,
-            Express,
-            Node, Git, Python, and more!
+            I've been studying hard, building projects with JavaScript, React, Node, Express, Postgres, Git, Python,
+            HTML, CSS, Docker, Sass, Hugo, Bootstrap, Jekyll, and more!
           </p>
           <p>
             I love being outside, trail running, backpacking, playing board games, and reading.
