@@ -376,6 +376,7 @@ body {
     color: #69231b; }
   .project__description {
     margin: 1rem 0;
+    font-size: 1.8rem;
     line-height: 1.6; }
     .project__description a,
     .project__description a:visited {
