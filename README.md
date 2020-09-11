@@ -2,7 +2,7 @@
 
 Portfolio site for Tyler Auer built with HTML and Sass
 
-# References
+## References
 
 `npm start` - Starts up a server on port 8080 which watches for changes to files and automatically recompiles Sass.
 
